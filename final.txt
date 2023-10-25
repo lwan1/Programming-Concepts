@@ -1,0 +1,44 @@
+TITLE: 
+Leon Wan
+Section B
+Project m.b.
+
+PROBLEM DESCRIPTION:
+The program that was created accepts a .txt file with two numbers spaced out
+on each line. From these points, the line of regression is estimated using the
+least-squares algorithm, a concept within the realm of linear algebra. After finding
+the slope (m) and y-intercept (b), which are provided by the parameter vector,
+a graphical representation is shown in a SFML window. The drawing not only
+incorporates the input file's points, but also the linear regression line and its
+mathematical equation. Thus, the final product gives the user a nice impression 
+of how the provided points fit together.
+
+PROGRAM DESCRIPTION:
+The program itself is somewhat "automatic", in that the user does not have to do
+much preparation for the program to run. However, for analyzing different data
+sets, the user must change the program code that reads in the "points_.txt" file,
+where "_" is anything ranging from NULL to ∞. There are specifically 2 lines of
+code that has this implementation. I could change it so that the program prompts
+the user for the file name, but I wanted it to be as straightforward as possible.
+If I could further improve the program, I would add functions for different trend 
+lines to fit the data. But, parabolas and other curves may be difficult to draw in
+SFML, and the least-squares solution is already quite involved to find the line of
+regression.
+
+TESTS:
+Input: points.txt --> handles small amount of positive single-digit integers
+Input: points2.txt --> handles small amount of larger positive doubles
+Input: points3.txt --> handles larger data sets, may be at threshold of display with larger numbers
+Input: points4.txt --> handles negative x-values
+Input: points5.txt --> handles both negative x- and y-values
+
+REFLECTIONS:
+Working with two-dimensional vectors posed a challenge and really gave me
+some trouble. I learned about managing vectors within functions, especially the
+idea of appending vectors into the preestablished 2D vectors. I also encountered
+issues with the SFML coordinate grid, a super unintuitive system. Eventually,
+the graph was properly formatted to display the correct orientation relative to
+the axes. Overall, my thought process worked for the most part when I was 
+tackling this algorithm, and it's safe to say that I'm satisfied with the end result.
+
+
